@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tumble Tap</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+
+    <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+    
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <style>
+body, html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+.table {
+    display:table;
+    width:100%;
+	margin-top:25%;
+}
+.table-cell {
+    display:table-cell;
+    vertical-align: middle;
+}
+.tumble {
+	background-color:#FF0;
+}
+.circle {
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	margin: 0 auto;
+}
+.red {
+	background-color:#F00;
+}
+.blue {
+	background-color:#00F;
+}
+.green {
+	background-color:#0F0;
+}
+</style>
+    
+</head>
+
+<body class="tumble">
+
+<div data-role="page" id="pageone" class="tumble">
+  <div data-role="main" class="ui-content">
+  	<div class="table">
+    	<div class="table-cell"><a href="#imgone" data-transition="pop"><div class="circle red"></div></a></div>
+        <div class="table-cell"><a href="#imgtwo" data-transition="pop"><div class="circle green"></div></a></div>
+        <div class="table-cell"><a href="#imgthree" data-transition="pop"><div class="circle blue"></div></a></div>
+    </div>   		
+  </div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="imgone">
+	<div data-role="header">
+    	<h2>Balloon</h2>
+  	</div>
+	<div data-role="main" class="ui-content">
+   	<img src="img/balloon.png" width="100%">
+  	</div>
+</div>
+
+<div data-role="page" data-dialog="true" id="imgtwo">
+	<div data-role="header">
+    	<h2>Teddy</h2>
+  	</div>
+	<div data-role="main" class="ui-content">
+   	<img src="img/teddy.png" width="100%">
+  	</div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="imgthree">
+	<div data-role="header">
+    	<h2>Football</h2>
+  	</div>
+	<div data-role="main" class="ui-content">
+   	<img src="img/football.png" width="100%">
+  	</div>
+</div> 
+
+</body>
+</html>
