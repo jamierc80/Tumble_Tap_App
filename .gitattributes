@@ -1,7 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-*.rb linguist-language=JS
+*.xdk linguist-language=JavaScript
+*.xdke linguist-language=JavaScript
+*.xdk_bak linguist-language=JavaScript
+*.xdke_bak linguist-language=JavaScript
 
 # Custom for Visual Studio
 *.cs     diff=csharp
